@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Can You Remember</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div id="myModal" class="modal fade">
+	  		<div class="modal-dialog">
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	       				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr only">Close</span></button>
+	        			<h1 class="modal-title black-font">Congratulations, You Won!</h1>
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal"></button>
+	       				<button id="restart-button" type="button" class="btn btn-primary" data-dismiss="modal">Play Again?</button>
+	   				</div>
+	   			</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<div id="main">
+			<h1>Can You Remember?</h1>
+			<p id="elapsed-seconds" class="stats"></p>
+			<p id="matches" class="stats"></p>
+			<p id="remaining" class="stats"></p>
+			<p id="fails" class="stats"></p>
+			<div id="game-board"></div>
+			<button id="start-button" class="btn btn-default start-button" type="button">Start New Game</button>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>	
